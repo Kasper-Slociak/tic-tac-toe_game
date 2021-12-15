@@ -1,0 +1,78 @@
+body
+{
+    background-color: #65656F;
+  
+}
+
+.board {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh; 
+    background: #f0f0f0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 10rem);
+    grid-gap: 0.2rem;
+    display: grid;
+    border: 0.2rem solid #ddd;
+    cursor: pointer;
+}
+.box {
+    background: #fff; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 2rem;
+    color: #222;
+
+}
+
+.box--draw-X
+{
+background-image: url("./X.png");
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: center;
+}
+.box--draw-O
+{
+background-image: url("./O.png");
+background-repeat: no-repeat;
+background-position-x: center;
+background-position-y: center;
+}
+.winner
+{
+   
+    text-align: center;
+    font-size: 1.5rem;
+    color: wheat;
+}
+.tryAgain
+{
+    opacity: 0;
+    display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 1.3rem;
+   background-color:tomato;
+   color: white;
+   border-radius: 3rem;
+}
+.credits
+{
+    margin-top: 12rem;
+    text-align: center;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1
+{
+    text-align: center;
+    color:white;
+    font-size: 3rem;
+    margin-bottom: -5rem;
+    margin-top: 5rem;
+}
